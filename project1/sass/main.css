@@ -1,0 +1,12 @@
+.timer__countdown {
+  width: 100%;
+  float: left;
+  margin: 20px auto;
+}
+
+.timer__elem {
+  font: 72px Courier;
+  color: #000;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
