@@ -1,0 +1,74 @@
+.header
+	background: url('../img/lines.png') no-repeat 100% 50%, url('../img/header-bg2.png') no-repeat 50% 50% #007EE5
+	background-size: contain
+	&__logo
+		+fgh
+		font-size: 26px
+		font-weight: 900
+		text-transform: uppercase
+		color: #fff
+	&__nav
+		display: flex
+		padding-top: 65px
+		justify-content: space-between
+		align-items: center
+	&__title
+		font-size: 44px;
+		color: #fff
+		+bold
+		text-transform: uppercase
+		padding-top: 183px
+		letter-spacing: -1.2px
+	&__subtitle
+		font-size: 44px;
+		color: #fff
+		text-transform: uppercase
+		margin-top: -30px
+		letter-spacing: -1.2px
+	&__vantage
+		list-style-type: none
+		color: #88c9ff
+		font-size: 20px
+		font-weight: 300
+		padding-top: 63px
+		&-bold
+			+bold
+		&-icon
+			padding-right: 9px
+		&-light
+			+ligth
+			
+.navigation
+	font-size: 14px
+	font-weight: 700
+	letter-spacing: 0.2px
+	text-transform: uppercase
+	width: 402px
+	&__list
+		display: flex
+		justify-content: space-between
+		list-style: none
+	&__link
+		color: #fff
+		text-decoration: none
+
+.form
+	&__input
+		width: 308px
+		height: 42px
+		box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(1, 1, 1, 0.15)
+		border: 1px solid #94cfff
+		background-color: #ffffff
+		border-radius: 4px
+		padding: 15px 15px 15px 14px
+		margin: 49px 11px 149px 0
+	&__button
+		width: 181px
+		height: 42px
+		box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45)
+		background-color: #ffbb05
+		border-radius: 4px
+		text-transform: uppercase
+		+regular
+		font-weight: 700
+		border: none

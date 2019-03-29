@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'Open Sans Regular';
+	src: url('../fonts/OpenSans-Regular/OpenSans-Regular.eot');
+	src: url('../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Regular/OpenSans-Regular.woff') format('woff'),
+	url('../fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans ExtraBold';
+	src: url('../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.eot');
+	src: url('../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.woff') format('woff'),
+	url('../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Franklin Gothic Heavy';
+	src: url('../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.eot');
+	src: url('../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.eot?#iefix') format('embedded-opentype'),
+	url('../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.woff') format('woff'),
+	url('../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('../fonts/OpenSans-Light/fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light/fonts/OpenSans-Light.eot.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Light/fonts/OpenSans-Light.eot.woff') format('woff'),
+	url('../fonts/OpenSans-Light/fonts/OpenSans-Light.eot.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin regular {
+	font-family: 'Open Sans Regular', sans-serif;
+}
+
+@mixin bold {
+	font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+@mixin fgh {
+	font-family: 'ITC Franklin Gothic Heavy', sans-serif;
+}
+
+@mixin ligth{
+	font-family: 'Open Sans Light', sans-serif;
+}

@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  src: url("../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.eot");
+  src: url("../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC Franklin Gothic Heavy';
+  src: url("../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.eot");
+  src: url("../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.eot?#iefix") format("embedded-opentype"), url("../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.woff") format("woff"), url("../font/ITCFranklinGothicStd-Hvy/ITCFranklinGothicStd-Hvy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../fonts/OpenSans-Light/fonts/OpenSans-Light.eot");
+  src: url("../fonts/OpenSans-Light/fonts/OpenSans-Light.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light/fonts/OpenSans-Light.eot.woff") format("woff"), url("../fonts/OpenSans-Light/fonts/OpenSans-Light.eot.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#timer__days {
+  display: none;
+}
+
+#timer__seconds, #timer__minutes, #timer__hours {
+  font-size: 58px;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-weight: 700;
+  color: #88c9ff;
+}
+
+.timer__elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 72px;
+}
+
+.timer__element {
+  width: 95px;
+  height: 95px;
+  border: 2px solid #88c9ff;
+  background-color: #0072bc;
+  text-align: center;
+  margin-right: 13px;
+}
+
+.timer__element:last-child {
+  margin-right: 0;
+}
+
+.timer__text {
+  color: #fff;
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1174px;
+  margin: auto;
+}
+
+.header {
+  background: url("../img/lines.png") no-repeat 100% 50%, url("../img/header-bg2.png") no-repeat 50% 50% #007EE5;
+  background-size: contain;
+}
+
+.header__logo {
+  font-family: 'ITC Franklin Gothic Heavy', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 65px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  font-size: 44px;
+  color: #fff;
+  font-family: 'Open Sans ExtraBold', sans-serif;
+  text-transform: uppercase;
+  padding-top: 183px;
+  letter-spacing: -1.2px;
+}
+
+.header__subtitle {
+  font-size: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: -30px;
+  letter-spacing: -1.2px;
+}
+
+.header__vantage {
+  list-style-type: none;
+  color: #88c9ff;
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 63px;
+}
+
+.header__vantage-bold {
+  font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+.header__vantage-icon {
+  padding-right: 9px;
+}
+
+.header__vantage-light {
+  font-family: 'Open Sans Light', sans-serif;
+}
+
+.navigation {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  width: 402px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.navigation__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.form__input {
+  width: 308px;
+  height: 42px;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(1, 1, 1, 0.15);
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(1, 1, 1, 0.15);
+  border: 1px solid #94cfff;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 15px 15px 15px 14px;
+  margin: 49px 11px 149px 0;
+}
+
+.form__button {
+  width: 181px;
+  height: 42px;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+  background-color: #ffbb05;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-weight: 700;
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */
