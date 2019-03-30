@@ -1,5 +1,5 @@
 .header
-	background: url('../img/lines.png') no-repeat 100% 50%, url('../img/header-bg2.png') no-repeat 50% 50% #007EE5
+	background: url('../img/header-bg2.png') no-repeat 50% 50% #007EE5
 	background-size: contain
 	&__logo
 		+fgh
@@ -37,20 +37,36 @@
 			padding-right: 9px
 		&-light
 			+ligth
-			
+
 .navigation
-	font-size: 14px
-	font-weight: 700
-	letter-spacing: 0.2px
-	text-transform: uppercase
-	width: 402px
 	&__list
 		display: flex
 		justify-content: space-between
 		list-style: none
 	&__link
+		font-size: 14px
+		font-weight: 700
+		letter-spacing: 0.2px
 		color: #fff
 		text-decoration: none
+		text-transform: uppercase
+		margin-right: 50px
+		padding: 5px
+		border-radius: 4px
+		transition: background-color .25s ease
+		&:hover
+			background-color: rgba(255, 255, 255, .3)
+	&__social
+		&-link
+			color: #fff
+			margin-right: 11px
+			padding: 3px
+			border-radius: 4px
+			transition: background-color .25s ease
+			&:hover
+				background-color: rgba(255, 255, 255, .3)
+			&_no-indent
+				margin-right: 0
 
 .form
 	&__input
@@ -72,3 +88,4 @@
 		+regular
 		font-weight: 700
 		border: none
+		cursor: pointer

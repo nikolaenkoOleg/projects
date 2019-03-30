@@ -1,3 +1,9 @@
+$(function() {
+	$('.button').click(function(){
+		$('.button').toggleClass('active');
+	});
+});
+
 function countdown(dateEnd) {
   var timer, days, hours, minutes, seconds;
  
