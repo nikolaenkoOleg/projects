@@ -1,6 +1,7 @@
 $(function() {
 	$('.button').click(function(){
 		$('.button').toggleClass('active');
+		$('.navigation__list').toggleClass('dropdown');
 	});
 });
 
