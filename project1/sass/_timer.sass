@@ -26,3 +26,43 @@
 		color: #fff
 		+regular
 
+@media screen and (max-width: 320px)
+	#timer
+		&__seconds, 
+		&__minutes, 
+		&__hours
+			font-size: 40px
+	.timer
+		&__elements
+			justify-content: center
+			padding-top: 25px
+			text-align: center
+		&__element
+			width: 70px
+			height: 70px
+		&__text
+			font-size: 14px
+@media screen and (max-width: 1200px)
+	.timer
+		&__elements
+			padding-left: 10px
+
+@media screen and (max-width: 992px)
+	.timer
+		&__elements
+			justify-content: start
+			padding-top: 20px
+			padding-left: 10px
+
+@media screen and (max-width: 768px)
+	.timer
+		&__elements
+			justify-content: center
+			padding-top: 20px
+
+@media screen and (max-width: 480px)
+	.timer
+		&__elements
+			justify-content: center
+			padding-top: 25px
+			text-align: center

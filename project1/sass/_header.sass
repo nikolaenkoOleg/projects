@@ -1,5 +1,5 @@
 .header
-	background: url('../img/header-bg2.png') no-repeat 50% 50% #007EE5
+	background: url('../img/header-bg2.png') no-repeat center top #007EE5
 	background-size: contain
 	&__logo
 		+fgh
@@ -58,6 +58,7 @@
 			background-color: rgba(255, 255, 255, .3)
 	&__social
 		display: flex
+		list-style-type: none
 		&-link
 			color: #fff
 			margin-right: 11px
@@ -90,18 +91,82 @@
 		border: none
 		cursor: pointer
 
-@media screen and (max-width: 320px)
+@media screen and (max-width: 1200px)
+	.header
+		background: url('../img/header-bg2.png') no-repeat center top #007EE5
+		&__nav
+			justify-content: space-around
+		&__title
+			font-size: 35px;
+			padding-top: 50px
+			padding-left: 10px
+		&__subtitle
+			font-size: 30px;
+			margin-top: -30px
+			padding-left: 10px
+		&__vantage
+			font-size: 20px
+			padding: 15px 0 0 10px
+	.navigation
+		&__link
+			margin-right: 0
+			padding: 7px
+		&__social
+			margin-left: 25px
+	.form
+		&__wrap
+			padding-left: 10px
+
+@media screen and (max-width: 992px)
+	.header
+		background: url('../img/header-bg2.png') no-repeat center top #007EE5
+		&__nav
+			justify-content: space-around
+		&__title
+			font-size: 35px;
+			padding-top: 50px
+			padding-left: 10px
+		&__subtitle
+			font-size: 30px;
+			margin-top: -30px
+			padding-left: 10px
+		&__vantage
+			font-size: 20px
+			padding: 15px 0 0 10px
+	.navigation
+		&__link
+			margin-right: 0
+			padding: 7px
+		&__social
+			margin-left: 25px
+	.form
+		&__wrap
+			padding-left: 10px
+
+@media screen and (max-width: 768px)
 	.button
 		display: block
 		position: absolute
 		right: 0
 		top: 25px
 	.header
+		background-image: none
 		&__nav
 			flex-direction: column
 			align-items: flex-start
 			padding-top: 10px
 			padding-left: 10px
+		&__title
+			font-size: 26px
+			padding-left: 10px
+			padding-top: 160px
+		&__subtitle
+			font-size: 26px
+			margin-top: -20px
+			padding-left: 10px
+		&__vantage
+			font-size: 15px
+			padding: 15px 0 0 10px
 	.navigation
 		&__list
 			flex-direction: column
@@ -117,10 +182,115 @@
 			margin-top: 10px
 			display: inline-block
 		&__social
-			margin-top: 10px
+			margin: 10px 0 0 5px
 	.dropdown
 		transition: .5s ease
 		transform: translateX(-10px)
 		position: absolute
 		right: 0
-
+	.form
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		&__input
+			width: 295px
+			margin: 20px 0 10px 0
+		&__button
+			margin-bottom: 30px
+			
+@media screen and (max-width: 480px)
+	.button
+		display: block
+		position: absolute
+		right: 0
+		top: 25px
+	.header
+		background: #007EE5
+		&__nav
+			flex-direction: column
+			align-items: flex-start
+			padding-top: 10px
+			padding-left: 10px
+		&__vantage
+			font-size: 15px
+			padding: 15px 0 0 10px
+	.navigation
+		&__list
+			flex-direction: column
+			position: absolute
+			right: 10px
+			top: 60px
+			transition: .5s ease
+			transform: translateX(120px)
+		&__link
+			font-size: 17px
+			margin-right: 0
+		&__item
+			margin-top: 10px
+			display: inline-block
+		&__social
+			margin: 10px 0 0 5px
+	.dropdown
+		transition: .5s ease
+		transform: translateX(-10px)
+		position: absolute
+		right: 0
+		
+@media screen and (max-width: 320px)
+	.button
+		display: block
+		position: absolute
+		right: 0
+		top: 25px
+	.header
+		background: #007EE5
+		&__nav
+			flex-direction: column
+			align-items: flex-start
+			padding-top: 10px
+			padding-left: 10px
+		&__title
+			font-size: 26px
+			padding-left: 10px
+			padding-top: 160px
+		&__subtitle
+			font-size: 26px
+			margin-top: -20px
+			padding-left: 10px
+		&__vantage
+			font-size: 15px
+			padding: 15px 0 0 10px
+	.navigation
+		&__list
+			flex-direction: column
+			position: absolute
+			right: 10px
+			top: 60px
+			transition: .5s ease
+			transform: translateX(120px)
+		&__link
+			font-size: 17px
+			margin-right: 0
+		&__item
+			margin-top: 10px
+			display: inline-block
+		&__social
+			margin: 10px 0 0 5px
+	.dropdown
+		transition: .5s ease
+		transform: translateX(-10px)
+		position: absolute
+		right: 0
+	.form
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		&__input
+			width: 295px
+			margin: 20px 0 10px 0
+		&__button
+			margin-bottom: 30px
