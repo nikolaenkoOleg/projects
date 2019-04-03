@@ -1,0 +1,58 @@
+.sprite
+	&-man
+    width: 35px
+    height: 39px
+    background-position: -47px -160px
+	&-screen
+    width: 44px
+    height: 36px
+    background-position: -197px -160px
+	&-dialog
+    width: 46px
+    height: 38px
+    background-position: -159px -54px
+	&-forma
+		width: 44px
+		height: 38px
+		background-position: -5px -5px
+
+.sprite
+	&-man,
+	&-screen,
+	&-dialog,
+	&-forma
+		margin-right: 0
+		margin: 0 0 21px 0
+
+.progress
+	background:url('../img/bg - server.png') no-repeat 50% 50%
+	background-size: cover
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__block
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		margin-top: 86px
+	&__line
+		width: 4px
+		height: 30px
+		background-color: #269dff
+	&__number
+		color: #a9d8ff
+		+bold
+		font-size: 52px
+		font-weight: 400
+		letter-spacing: -0.64px
+		padding-bottom: 21px
+	&__text
+		color: #a9d8ff
+		+regular
+		font-size: 20px
+		font-weight: 400
+		text-transform: uppercase
+		padding-bottom: 91px

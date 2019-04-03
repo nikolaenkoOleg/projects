@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px)
+	.progress
+		&__wrap
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+			height: 600px
+		&__line
+			width: 30px
+			height: 4px
+			&:nth-of-type(2)
+				display: none
+		&__block
+			margin-top: 40px
+		&__text
+			padding-bottom: 40px
+@media screen and (max-width: 480px)
+	.progress
+		&__wrap
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+		&__line
+			width: 30px
+			height: 4px
+		&__block
+			margin-top: 40px
+		&__text
+			padding-bottom: 40px
