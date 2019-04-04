@@ -1,3 +1,12 @@
+$(document).ready(function(){
+  $(".feedback__owl-carousel").owlCarousel({
+		loop: true,
+		items: 1,
+		nav: true
+		
+	});
+});
+
 $(function() {
 	$('.button').click(function(){
 		$('.button').toggleClass('active');

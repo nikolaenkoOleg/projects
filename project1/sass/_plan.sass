@@ -1,0 +1,103 @@
+.plan
+	&__title
+		color: #181818
+		+bold
+		font-size: 36px
+		font-weight: 400
+		line-height: 32px
+		text-transform: uppercase
+		margin-top: 90px
+		text-align: center
+	&__text
+		color: #434547
+		+regular
+		font-size: 16px
+		font-weight: 400
+		line-height: 28px
+		text-align: center
+		margin-top: 22px
+	&__line
+		display: block
+		width: 78px
+		height: 5px
+		background-color: #dbdbdb
+		margin: 0 auto
+		margin-top: 21px
+	&__wrap
+		display: flex
+		justify-content: space-around
+		margin: 71px 0 100px 0
+
+.offer
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	transition: all .5s ease
+	&:hover
+		background-color: #f0f0f0
+	&__title
+		color: #3c444f
+		+bold
+		font-size: 25px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 1.14px
+		margin-top: 70px
+	&__line
+		width: 309px
+		height: 2px
+		background-color: #007ee5
+		margin-top: 19px
+		position: relative
+		margin-bottom: 72px
+		&:after
+			content: ""
+			position: absolute
+			left: 30%
+			width: 122px
+			height: 2px
+			background-color: #ff9d1d
+	&__price
+		color: #007ee5
+		+bold
+		font-size: 28px
+		font-weight: 400
+		&-number
+			font-size: 84px
+	&__stats
+		margin-top: 26px
+		padding: 0 30px 0 30px
+	&__info
+		color: #788697
+		+regular
+		font-size: 23px
+		font-weight: 400
+		padding: 25px 33px 25px 33px
+		border-bottom: 1px solid #d7d8dc
+		text-align: center
+	&__bold
+		+bold
+		font-weight: 700
+	&__button
+		color: #3c444f
+		+bold
+		font-size: 20px
+		font-weight: 400
+		text-transform: uppercase
+		padding: 17px 56px 17px 56px
+		border: 3px solid #3c444f
+		text-decoration: none
+		border-radius: 50px 50px 50px 50px
+		margin: 131px 0 85px 0
+		transition: background-color .5s ease, border-color .5s ease
+		&:hover
+			background-color: #fac212
+			border-color: #fac212
+.line
+	&-1
+		&:after
+			background-color: #e7e7e7
+	&-3
+		&:after
+			background-color: #bed194
