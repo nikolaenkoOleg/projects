@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  $(".feedback__owl-carousel").owlCarousel({
+  $(".owl-carousel").owlCarousel({
 		loop: true,
-		items: 1,
-		nav: true
-		
+    margin: 10,
+		nav: true,
+		items: 1
 	});
 });
 
