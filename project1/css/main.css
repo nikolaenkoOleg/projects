@@ -975,6 +975,251 @@ body {
   display: flex;
 }
 
+.join-service {
+  background: url("../img/Woman.png") no-repeat 50% 0;
+}
+
+.join-service__title {
+  color: #181818;
+  font-family: 'Open Sans ExtraBold', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.87px;
+  text-align: center;
+  padding-top: 570px;
+}
+
+.join-service__text {
+  color: #434547;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32.06px;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.join-service__line {
+  display: block;
+  width: 78px;
+  height: 5px;
+  background-color: #dbdbdb;
+  margin: 21px auto 50px auto;
+}
+
+.join-service__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.join-service__information-block {
+  background-color: #788697;
+  width: 350px;
+  height: 191px;
+  border-radius: 4px;
+}
+
+.join-service__information-title {
+  color: #ffffff;
+  font-family: 'Open Sans ExtraBold', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 31px 41px 0 32px;
+}
+
+.join-service__information-text {
+  color: #ffffff;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 15px 45px 30px 30px;
+}
+
+.join-service__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 65px;
+}
+
+.join-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.join-form__input {
+  width: 468px;
+  height: 42px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15);
+          box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15);
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #999999;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 37px;
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 16px;
+}
+
+.join-form__label {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+  font-weight: 300;
+}
+
+.join-form__label-bold {
+  color: #000000;
+  font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+.join-form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+}
+
+.join-form__button {
+  border: 3px solid #007ee5;
+  background-color: #007ee5;
+  padding: 15px 50px;
+  margin: 96px 0 87px 0;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.6px;
+}
+
+.live-chat, .conatct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.live-chat__title, .conatct__title {
+  color: #272829;
+  font-family: 'Open Sans ExtraBold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+}
+
+.live-chat__text, .conatct__text {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #434547;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.live-chat__button, .conatct__button {
+  background-color: #ffcb05;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  color: #000000;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.42px;
+  padding: 8px 33px 8px 33px;
+  margin-top: 11px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__title {
+  color: #272829;
+  font-family: 'Open Sans ExtraBold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+}
+
+.contact__text {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #434547;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact__button {
+  background-color: #ffcb05;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  color: #000000;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.42px;
+  padding: 8px 33px 8px 33px;
+  margin-top: 11px;
+}
+
+.contact__blue {
+  color: #007ee5;
+}
+
+.social__elem {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #272829;
+  border-radius: 50%;
+  color: #272829;
+  padding: 15px 20px;
+}
+
 @media screen and (max-width: 1200px) {
   .header {
     background: url("../img/header-bg2.png") no-repeat center top #007EE5;
