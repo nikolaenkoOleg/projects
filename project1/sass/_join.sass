@@ -50,6 +50,7 @@
 	&__footer
 		display: flex
 		justify-content: space-around
+		align-items: center
 		margin-bottom: 65px
 
 .join-form
@@ -57,6 +58,19 @@
 	flex-direction: column
 	align-items: center
 	justify-content: space-between
+	&__select
+		width: 468px
+		height: 42px
+		box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15)
+		border: 1px solid #cccccc
+		background-color: #ffffff
+		color: #999999
+		+regular
+		font-size: 14px
+		font-weight: 400
+		line-height: 37px
+		padding-left: 15px
+		margin-bottom: 16px
 	&__input
 		width: 468px
 		height: 42px
@@ -70,6 +84,10 @@
 		line-height: 37px
 		padding: 15px 15px 15px 15px 
 		margin-bottom: 16px
+	&__checkbox
+		display: none
+		&:checked + label:before
+			background-color: #007ee5
 	&__label
 		+regular
 		font-size: 18px
@@ -77,12 +95,25 @@
 		line-height: 24px
 		color: #222222
 		font-weight: 300
+		position: relative
+		cursor: pointer
+		padding: 0
+		&:before  
+			content: ''
+			margin-right: 10px
+			display: inline-block
+			width: 19px
+			height: 19px
+			box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15)
+			border: 1px solid #cccccc
+			background-color: #f5f5f5
+			border-radius: 4px
 		&-bold
 			color: #000000
 			+bold
 	&__container
 		display: flex
-		width: 400px
+		width: 450px
 	&__button
 		border: 3px solid #007ee5
 		background-color: #007ee5
@@ -95,7 +126,10 @@
 		font-weight: 700
 		text-transform: uppercase
 		letter-spacing: -0.6px
-.live-chat, .conatct
+
+  
+
+.live-chat, .contact
 	display: flex
 	flex-direction: column
 	align-items: center
@@ -125,41 +159,21 @@
 		padding: 8px 33px 8px 33px
 		margin-top: 11px
 .contact
-	display: flex
-	flex-direction: column
-	align-items: center
-	&__title
-		color: #272829
-		+bold
-		font-size: 18px
-		font-weight: 700
-		letter-spacing: -0.32px
-	&__text
-		text-shadow: 0 1px 0 #ffffff
-		color: #434547
-		+regular
-		font-size: 16px
-		font-weight: 400
-		line-height: 24px
-	&__button
-		background-color: #ffcb05
-		text-decoration: none
-		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75)
-		color: #000000
-		+regular
-		font-size: 14px
-		font-weight: 700
-		text-transform: uppercase
-		letter-spacing: -0.42px
-		padding: 8px 33px 8px 33px
-		margin-top: 11px
 	&__blue
 		color: #007ee5
 .social
-	&__elem
+	display: flex
+
+.sprite
+	&-f
 		width: 48px
 		height: 48px
-		border: 1px solid #272829
-		border-radius: 50%
-		color: #272829
-		padding: 15px 20px
+		background-position: -55px -102px
+	&-in
+		width: 48px
+		height: 48px
+		background-position: -197px -102px
+	&-tw
+		width: 48px
+		height: 48px
+		background-position: -147px -206px
