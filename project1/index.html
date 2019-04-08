@@ -313,7 +313,12 @@
 				<div class="join-service__line"></div>
 
 				<form action="post" class="join-form">
-					<input type="select" id="select" class="join-form__input" placeholder="Select A Package">
+					<select class="join-form__select">
+						<option>Select A Package</option>
+						<option>Package1</option>
+						<option>Package2</option>
+						<option>Package3</option>
+					</select>
 					<input type="text" id="userName" class="join-form__input" placeholder="Username">
 					<input type="email" id="email" class="join-form__input" placeholder="Email">
 					<input type="password" id="userPassword" class="join-form__input" placeholder="Password">
@@ -352,15 +357,27 @@
 						<a href="" class="live-chat__button">Live Chat</a>
 					</div>
 					<div class="social">
-						<a href="" class="social__elem"><i class="fab fa-facebook-f social-icon"></i></a>
-						<a href="" class="social__elem"><i class="fab fa-linkedin   social-icon"></i></a>
-						<a href="" class="social__elem"><i class="fab fa-twitter    social-icon"></i></a>
+						<a href="#" class="social__elem sprite sprite-f"></a>
+						<a href="#" class="social__elem sprite sprite-in"></a>
+						<a href="#" class="social__elem sprite sprite-tw"></a>
 					</div>
 					<div class="contact">
 						<h4 class="contact__title">WE WOULD LOVE TO TALK TO YOU</h4>
 						<p class="contact__text">Email us at <span class="contact__blue">hello@domain.com</span> or</p>
 						<a href="" class="contact__button">Contact us</a>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section class="news">
+			<div class="container">
+				<div class="news__wrap">
+					<h2 class="news__title">Subscribe to <br> our newsletter</h2>
+					<form action="post" class="news__form">
+						<input type="text" class="news__form-input"  placeholder="Your Name">
+						<input type="email" class="news__form-input" placeholder="Email Address">
+						<button type="submit" class="news__form-submit"></button>
+					</form>
 				</div>
 			</div>
 		</section>
