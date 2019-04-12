@@ -1,0 +1,75 @@
+.footer
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__block
+		display: flex
+		flex-direction: column
+		&:first-child
+			width: 365px
+		&:nth-child(3)
+			width: 300px
+		&-title
+			color: #3c4146
+			+bold
+			font-size: 20px
+			font-weight: 400
+			line-height: 21px
+			letter-spacing: -0.57px
+			margin: 60px 0 27px 0
+		&-text
+			color: #3c4146
+			+regular
+			font-size: 14px
+			font-weight: 300
+			line-height: 30px
+		&-link
+			color: #3c4146
+			+regular
+			font-size: 14px
+			font-weight: 300
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+			&_bottom
+				margin: 153px 0 50px 0
+		&-mail
+			color: #3c4146
+			text-decoration: none
+			margin-bottom: 13px
+			&:hover
+				text-decoration: underline
+		&-tel
+			margin-bottom: 5px
+			color: #3c4146
+
+.list
+	list-style-type: none
+	&__item
+		margin-bottom: 13px
+	
+.social
+	&__wrap	
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: flex-start
+	&__block
+		margin-bottom: 25px
+		&-elem
+			color: #3c4146
+			+regular
+			font-size: 14px
+			font-weight: 400
+			text-decoration: none
+			display: inline-block
+			width: 100px
+			position: relative
+			&:hover
+				text-decoration: underline
+			&::before
+				content: 'f39e'
+				font-family: FontAwesome
+				left: -30px
+				position: absolute
+				top: 0

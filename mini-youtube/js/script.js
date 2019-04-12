@@ -101,3 +101,17 @@ more.addEventListener('click', () => {
 		}, 10);
 	}
 });
+
+function sliceTitle(selector, count) {
+	document.querySelectorAll(selector).forEach(item => {
+			item.textContent.trim();
+
+			if (item.textContent.length < 100) {
+					return;
+			} else {
+				 const str = item.textContent.slice(0, count + 1) + '...';
+				 item.textContent = str;
+			}
+	});
+}
+sliceTitle('.videos__item-descr', 100);
