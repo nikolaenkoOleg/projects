@@ -56,6 +56,10 @@
 		align-items: flex-start
 	&__block
 		margin-bottom: 25px
+		&-icon
+			display: inline-block
+			width: 20px
+			text-align: right
 		&-elem
 			color: #3c4146
 			+regular
@@ -65,11 +69,6 @@
 			display: inline-block
 			width: 100px
 			position: relative
+			margin-left: 5px
 			&:hover
 				text-decoration: underline
-			&::before
-				content: 'f39e'
-				font-family: FontAwesome
-				left: -30px
-				position: absolute
-				top: 0

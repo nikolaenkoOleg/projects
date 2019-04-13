@@ -1395,6 +1395,12 @@ body {
   margin-bottom: 25px;
 }
 
+.social__block-icon {
+  display: inline-block;
+  width: 20px;
+  text-align: right;
+}
+
 .social__block-elem {
   color: #3c4146;
   font-family: 'Open Sans Regular', sans-serif;
@@ -1404,18 +1410,11 @@ body {
   display: inline-block;
   width: 100px;
   position: relative;
+  margin-left: 5px;
 }
 
 .social__block-elem:hover {
   text-decoration: underline;
-}
-
-.social__block-elem::before {
-  content: 'f39e';
-  font-family: FontAwesome;
-  left: -30px;
-  position: absolute;
-  top: 0;
 }
 
 @media screen and (max-width: 1200px) {
