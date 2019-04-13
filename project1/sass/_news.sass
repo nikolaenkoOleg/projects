@@ -1,5 +1,6 @@
 .news
 	background-color: #007ee5
+	position: relative
 	&__wrap
 		display: flex
 		align-items: center
@@ -23,9 +24,15 @@
 		&:last-of-type
 			margin-left: 25px
 	&__form-submit
+		position: absolute
+		top: 103px
 		width: 52px
 		height: 52px
-		border: none
 		margin: 0 0 0 38px
-		background: url('../img/btn.png')
+		border: 1px solid #88c9ff
+		background: url('../img/arrow.png') no-repeat 50% 50%
 		cursor: pointer
+		transition: all .5s ease
+		&:hover
+			background-color: #007bd3
+			border: 10px solid #007bd3
