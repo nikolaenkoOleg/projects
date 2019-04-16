@@ -1,3 +1,16 @@
+$(document).ready(function(){ // при ширине >1200px подключаем плагин relevator
+	if ($(window).width() > 1200) {
+		var scriptRelevator = document.createElement('script');
+		scriptRelevator.src = 'js/fm.revealator.jquery.min.js';
+		document.head.appendChild(scriptRelevator);
+
+		var styleRelevator = document.createElement('link');
+		styleRelevator.rel = 'stylesheet';
+		styleRelevator.href = 'css/fm.revealator.jquery.min.css';
+		document.head.appendChild(styleRelevator);
+	}
+});
+
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
 		loop: true,
