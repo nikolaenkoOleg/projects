@@ -12,9 +12,11 @@ html
 	display: flex
 	background-color: #eaeaea
 	margin: 20px auto
+	justify-content: space-between
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1)
 	
 .profile
-	max-width: 350px
+	flex-basis: 35%
 	background-color: #39383a
 	color: #ababab
 	&-info
@@ -115,3 +117,195 @@ adress
 	&:nth-child(2)
 		width: 100px
 		margin-left: 20px
+
+.resume
+	padding: 25px 30px
+	flex-basis: 63%
+	background-color: #fff
+	&-wrap
+		border: 1px solid rgba(168, 168, 168, 0.44)
+		padding: 36px 56px
+		min-height: 100%
+
+.logo
+	display: flex
+	justify-content: center
+	margin-bottom: 30px
+	&-img
+		width: 90px
+		height: 90px
+		border: 1px solid #39383a
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+	&-lines
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		margin-left: 17px
+		margin-right: 17px
+		&-left
+			.logo-line:nth-child(2)
+				margin-right: 20px
+				width: 55px
+		&-right
+			.logo-line:nth-child(2)
+				margin-left: 20px
+				width: 55px
+	&-line
+		display: block
+		width: 43px
+		height: 2px
+		background-color: #39383a
+		margin-top: 10px
+		margin-bottom: 10px
+		&:nth-child(2)
+
+.about
+	text-align: center
+	border-bottom: 1px solid #e0e0e0
+	padding-bottom: 35px
+	&-title
+		color: #39383a
+		+bold
+		font-size: 16px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 10.75px
+		margin-bottom: 15px
+	&-position
+		color: #808080
+		+regular
+		font-size: 11px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 1.72px
+		margin-bottom: 32px
+		display: inline-block
+	&-address
+		color: #39383a
+		+bold
+		font-size: 13px
+		font-weight: 400
+		letter-spacing: 0.83px
+		font-style: normal
+		margin-bottom: 15px
+	&-contacts-link
+		text-decoration: none
+		color: #777777
+		+regular
+		font-size: 10px
+		font-weight: 400
+		letter-spacing: 0.52px
+
+.bold
+	+bold
+	font-weight: bold
+
+.experience
+	&-title
+		color: #39383a
+		+bold
+		font-size: 16px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 1.04px
+		margin-top: 40px
+		padding-bottom: 20px
+		border-bottom: 1px solid #e0e0e0
+		margin-bottom: 60px
+	&-list
+		list-style-type: none
+		padding-left: 0
+		&-item
+			position: relative
+			padding-left: 40px
+			margin-bottom: 40px
+			border-bottom: 2px dashed #ececec
+			padding-bottom: 40px
+			&:last-of-type
+				border-bottom: none
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 5px
+				width: 9px
+				height: 9px
+				border-radius: 50%
+				background-color: #39383a
+			&-title
+				+bold
+				color: #39383a
+				font-size: 14px
+				font-weight: 400
+				text-transform: uppercase
+				letter-spacing: 0.73px
+				margin-bottom: 5px
+			&-date
+				color: #39383a
+				+regular
+				font-size: 13px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.68px
+				margin-bottom: 19px
+			&-text
+				color: #777777
+				+regular
+				font-size: 12px
+				font-weight: 400
+				letter-spacing: 0.38px
+.skills
+	&-title
+		color: #39383a
+		+bold
+		font-size: 16px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 1.04px
+		margin-bottom: 48px
+	&-list
+		list-style-type: none
+		padding-left: 0
+		width: 375px
+		&-item
+			margin-bottom: 30px
+			text-transform: uppercase
+			font-size: 11px 
+			display: flex
+			justify-content: space-between
+			color: #39383a
+			+bold
+			font-size: 11px
+			font-weight: 500
+			text-transform: uppercase
+			letter-spacing: 0.73px
+			.level
+				width: 267px
+				height: 8px
+				border: 1px solid #39383a
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 0
+					height: 100%
+					width: 50%
+					background-color: #898989
+			&:first-child
+				.level
+					&::before
+						width: 70%
+			&:nth-child(2)
+				.level
+					&::before
+						width: 65%
+			&:last-child
+				.level
+					&::before
+						width: 80%
+
