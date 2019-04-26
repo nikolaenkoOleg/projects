@@ -425,6 +425,7 @@ adress {
 }
 
 .skills-list-item .level {
+  max-width: 267px;
   width: 267px;
   height: 8px;
   border: 1px solid #39383a;
@@ -451,5 +452,90 @@ adress {
 
 .skills-list-item:last-child .level::before {
   width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile {
+    -ms-flex-preferred-size: fill;
+        flex-basis: fill;
+  }
+  .lines {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .resime-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .skills-list-item {
+    width: 300px;
+  }
+  .skills-list-item-title {
+    font-size: 14px;
+  }
+  .skills-list-item-date {
+    font-size: 12px;
+  }
+  .skills-list-item-text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .skills-list-item .level {
+    width: 150px;
+  }
+  .about-contact-link {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+  .logo-lines {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .skills-list-item {
+    width: 200px;
+  }
+  .skills-list-item .level {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+  .container {
+    min-width: 320px;
+  }
+  .about-title {
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /**/
 }
 /*# sourceMappingURL=main.css.map */
